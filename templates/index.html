@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMEI Blockchain</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gidole&display=swap" rel="stylesheet">
+</head>    
+
+<body>
+    <button id="darkModeToggle">Switch Theme</button>
+
+    <h1>IMEI Blockchain System</h1>
+    <h2>Add IMEI</h2>
+    <input type="text" id="imeiInput" placeholder="Enter IMEI..." autocomplete="off">
+    <select id="statusSelect">
+        <option value="Lost">Lost</option>
+        <option value="Stolen">Stolen</option>
+        <option value="Blocked">Blocked</option>
+        <option value="Recovered">Recovered</option>
+    </select>
+    <input type="text" id="regionInput" placeholder="Enter Region..." autocomplete="off">
+    <input type="text" id="operatorInput" placeholder="Enter Operator..." autocomplete="off">
+    <button onclick="addIMEI()">Submit</button>
+    <p id="addMessage" class="fade-message"></p>
+
+    <h2>Search IMEI</h2>
+    <input type="text" id="searchImeiInput" placeholder="Search IMEI..." autocomplete="off">
+    <button onclick="searchIMEI()">Search</button>
+    <p id="searchResult" class="fade-message"></p>
+
+    <div class="welcome">
+        <p>Welcome to the recovery homepage for lost or stolen devices! This website is powered by blockchain technology to help combat theft and loss. Please enter your unique mobile identifier.</p>
+    </div>
+    <form action="/logout" method="post" style="text-align: center; margin-top: 40px;">
+        <button type="submit" style="padding: 10px 20px; font-size: 1rem;">Logout</button>
+    </form>
+
+    <script>
+        function addIMEI() {
+            let imei = $("#imeiInput").val();
+            let status = $("#statusSelect").val();
+            let region = $("#regionInput").val();
+            let operator = $("#operatorInput").val();
+
+            $.ajax({
+                url: "/add_imei",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ imei: imei, status: status, region: region, operator: operator }),
+                success: function(response) {
+                    $("#addMessage")
+                        .text(response.message)
+                        .css("color", "green")
+                        .addClass("show");
+
+                    $("#imeiInput").val("");
+                    $("#regionInput").val("");
+                    $("#operatorInput").val("");
+
+                    setTimeout(() => {
+                        $("#addMessage").removeClass("show");
+                    }, 5000);
+                },
+                error: function(xhr) {
+                    $("#addMessage")
+                        .text(xhr.responseJSON.error)
+                        .css("color", "red")
+                        .addClass("show");
+
+                    setTimeout(() => {
+                        $("#addMessage").removeClass("show");
+                    }, 5000);
+                }
+            });
+        }
+
+        function searchIMEI() {
+            let imei = $("#searchImeiInput").val();
+            let resultBox = $("#searchResult");
+
+            $.ajax({
+                url: "/search_imei?imei=" + imei,
+                type: "GET",
+                success: function(response) {
+                    resultBox
+                        .text("IMEI: " + response.imei + " - Status: " + response.status + " - Region: " + response.region + " - Operator: " + response.operator)
+                        .addClass("show");
+
+                    setTimeout(() => {
+                        resultBox.removeClass("show");
+                    }, 5000);
+                },
+                error: function(xhr) {
+                    resultBox
+                        .text(xhr.responseJSON.message)
+                        .addClass("show");
+
+                    setTimeout(() => {
+                        resultBox.removeClass("show");
+                    }, 5000);
+                }
+            });
+        }
+
+        $("#imeiInput, #operatorInput").on("keypress", function(e) {
+            if (e.which === 13) {
+                addIMEI();
+            }
+        });
+
+        $("#searchImeiInput").on("keypress", function(e) {
+            if (e.which === 13) {
+                searchIMEI();
+            }
+        });
+
+        const toggleDarkMode = () => {
+            const body = document.body;
+            const isDarkMode = body.classList.contains("dark-mode");
+
+            if (isDarkMode) {
+                body.classList.remove("dark-mode");
+            } else {
+                body.classList.add("dark-mode");
+            }
+
+            localStorage.setItem("darkMode", body.classList.contains("dark-mode"));
+        };
+
+        const savedDarkMode = localStorage.getItem("darkMode");
+        if (savedDarkMode === "true") {
+            document.body.classList.add("dark-mode");
+        }
+
+        const darkModeButton = document.getElementById("darkModeToggle");
+        if (darkModeButton) {
+            darkModeButton.addEventListener("click", toggleDarkMode);
+        }
+    </script>
+</body>
+</html>

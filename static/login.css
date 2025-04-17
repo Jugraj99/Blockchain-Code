@@ -1,0 +1,90 @@
+body {
+    font-family: "Gidole", sans-serif;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 110px; /* Add this line to move the content down */
+}
+
+h2 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    width: 250px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+input.dark-mode, select.dark-mode {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    
+    /* Positioning the button at the top right */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensures the button stays above other elements */
+}
+
+/* Hover effect for Dark Mode Toggle */
+#darkModeToggle:hover {
+    background-color: #0056b3;
+}
+
+body, input, select, button {
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+#themeImage {
+    transition: opacity 0.2s ease; /* match this to your page's transition time */
+    opacity: 1;
+}
+#themeImage.fade-out {
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}

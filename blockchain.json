@@ -1,0 +1,305 @@
+[
+    {
+        "index": 1,
+        "timestamp": "2025-03-24 17:18:23",
+        "devices": {
+            "8759629562953": "Recovered"
+        },
+        "previous_hash": "0",
+        "hash": "5cd39fb103ba415b17c027e14f861312b80c38decbfdeb285dfe9b67fdb21a34"
+    },
+    {
+        "index": 2,
+        "timestamp": "2025-03-24 17:22:51",
+        "devices": {
+            "9575575764": "Lost"
+        },
+        "previous_hash": "5cd39fb103ba415b17c027e14f861312b80c38decbfdeb285dfe9b67fdb21a34",
+        "hash": "67a257e3be783087e677f49674fe6f945009784f6475bd887b78cc0a59801d68"
+    },
+    {
+        "index": 3,
+        "timestamp": "2025-03-24 17:28:30",
+        "devices": {
+            "81379283100": "Stolen"
+        },
+        "previous_hash": "67a257e3be783087e677f49674fe6f945009784f6475bd887b78cc0a59801d68",
+        "hash": "2f89f2ca3e2a6284d5ee2271b0f0f3176a93515341a07d71ae17766ef355f45d"
+    },
+    {
+        "index": 4,
+        "timestamp": "2025-03-24 17:28:52",
+        "devices": {
+            "37680378463863": "Blocked"
+        },
+        "previous_hash": "2f89f2ca3e2a6284d5ee2271b0f0f3176a93515341a07d71ae17766ef355f45d",
+        "hash": "ff6122cdfdf0aaf6b94818522f8a6d604eb08810d96552fadd84f97ece23a235"
+    },
+    {
+        "index": 5,
+        "timestamp": "2025-03-24 18:13:37",
+        "devices": {
+            "0000000": "Blocked"
+        },
+        "previous_hash": "ff6122cdfdf0aaf6b94818522f8a6d604eb08810d96552fadd84f97ece23a235",
+        "hash": "f6455a1bd052279815caf59694540085dbb40050e305b911b17632d64106af72"
+    },
+    {
+        "index": 6,
+        "timestamp": "2025-03-25 14:29:36",
+        "devices": {
+            "8734862462462": "Blocked"
+        },
+        "previous_hash": "f6455a1bd052279815caf59694540085dbb40050e305b911b17632d64106af72",
+        "hash": "49eafffc8377ba3c6fb2d44dc4133946fe74f5ee16b94aa6adbd111e5b114624"
+    },
+    {
+        "index": 7,
+        "timestamp": "2025-03-26 12:58:31",
+        "devices": {
+            "792749230273": "Lost"
+        },
+        "previous_hash": "49eafffc8377ba3c6fb2d44dc4133946fe74f5ee16b94aa6adbd111e5b114624",
+        "hash": "724b8f0877bc26d59daa24fece3c77d2969c9056970df73f9754e51fa23fd2e8"
+    },
+    {
+        "index": 8,
+        "timestamp": "2025-03-26 13:23:37",
+        "devices": {
+            "000000000000009888": "Lost"
+        },
+        "previous_hash": "724b8f0877bc26d59daa24fece3c77d2969c9056970df73f9754e51fa23fd2e8",
+        "hash": "fcd1b2510d44f953276740a3c45247ddc06688b1156e59af53ba3830afd71b5a"
+    },
+    {
+        "index": 9,
+        "timestamp": "2025-03-26 17:25:45",
+        "devices": {
+            "039589353543": "Recovered"
+        },
+        "previous_hash": "fcd1b2510d44f953276740a3c45247ddc06688b1156e59af53ba3830afd71b5a",
+        "hash": "7446540fcd28f69b74c47fabfee7bb145ad9e433c9e18f9c400d0ffeab74b6be"
+    },
+    {
+        "index": 10,
+        "timestamp": "2025-03-26 17:37:26",
+        "devices": {
+            "573757575": "Recovered"
+        },
+        "previous_hash": "7446540fcd28f69b74c47fabfee7bb145ad9e433c9e18f9c400d0ffeab74b6be",
+        "hash": "9506b5b12c07690826966c41a2d44f8c6246a209123b762a10c0ce5f8c07f0f9"
+    },
+    {
+        "index": 11,
+        "timestamp": "2025-03-27 09:55:54",
+        "devices": {
+            "209397394739473": "Blocked"
+        },
+        "previous_hash": "9506b5b12c07690826966c41a2d44f8c6246a209123b762a10c0ce5f8c07f0f9",
+        "hash": "17214edcb6270e23d214ff796966e5801cdf8303672450f15486ff48ceeadfa5"
+    },
+    {
+        "index": 12,
+        "timestamp": "2025-04-01 02:05:52",
+        "devices": {
+            "0123456789": "Recovered"
+        },
+        "previous_hash": "17214edcb6270e23d214ff796966e5801cdf8303672450f15486ff48ceeadfa5",
+        "hash": "01117012846fb4a181bd631961c8af9f9b5e11557588bd0bbe5a3a308016ab0f"
+    },
+    {
+        "index": 13,
+        "timestamp": "2025-04-01 02:06:15",
+        "devices": {
+            "874034746344234": "Recovered"
+        },
+        "previous_hash": "01117012846fb4a181bd631961c8af9f9b5e11557588bd0bbe5a3a308016ab0f",
+        "hash": "43a3906f93081b5dfb032910f5a1d07798161708d5392a8e49036b6de6941177"
+    },
+    {
+        "index": 14,
+        "timestamp": "2025-04-04 18:08:49",
+        "devices": {
+            "018204849232": "Lost"
+        },
+        "previous_hash": "43a3906f93081b5dfb032910f5a1d07798161708d5392a8e49036b6de6941177",
+        "region": "United Kingdom",
+        "operator": "EE",
+        "hash": "99195372273cff21cbf2c7154ffa95ae50f30a49bb618ad36036fbe5a1125741"
+    },
+    {
+        "index": 15,
+        "timestamp": "2025-04-04 19:10:14",
+        "devices": {
+            "4652434636": "Lost"
+        },
+        "region": "United Kingdom",
+        "operator": "Vodafone",
+        "previous_hash": "99195372273cff21cbf2c7154ffa95ae50f30a49bb618ad36036fbe5a1125741",
+        "hash": "904ed3ed61e4b4a907cc6c0eb8b5df7a93007607132c5080d9b278497c244616"
+    },
+    {
+        "index": 16,
+        "timestamp": "2025-04-04 19:39:23",
+        "devices": {
+            "08024820438240": "Recovered"
+        },
+        "region": "United States",
+        "operator": "AT&T",
+        "previous_hash": "904ed3ed61e4b4a907cc6c0eb8b5df7a93007607132c5080d9b278497c244616",
+        "hash": "713a4ccec8919ae0a8cbc2f40bf97e1830046b09221292d1642b6b5d2af24dfd"
+    },
+    {
+        "index": 17,
+        "timestamp": "2025-04-05 05:02:41",
+        "devices": {
+            "34837437343334222": "Blocked"
+        },
+        "region": "United Kingdom",
+        "operator": "EE",
+        "previous_hash": "713a4ccec8919ae0a8cbc2f40bf97e1830046b09221292d1642b6b5d2af24dfd",
+        "hash": "d2ac954b6ae746f5e4e3937dfe8994c4e4d6840d15ef8a86a1e7ed3f31db8e05"
+    },
+    {
+        "index": 18,
+        "timestamp": "2025-04-05 17:03:46",
+        "devices": {
+            "30483343433434343": "Lost"
+        },
+        "region": "US",
+        "operator": "EE",
+        "previous_hash": "d2ac954b6ae746f5e4e3937dfe8994c4e4d6840d15ef8a86a1e7ed3f31db8e05",
+        "hash": "1acbb4a7942286985c372a10dfc2ecdf501752c1aabe616b6427e5760ee68c3a"
+    },
+    {
+        "index": 19,
+        "timestamp": "2025-04-06 15:29:06",
+        "devices": {
+            "7487485484588": "Recovered"
+        },
+        "region": "United Kingdom",
+        "operator": "Vodafone",
+        "previous_hash": "1acbb4a7942286985c372a10dfc2ecdf501752c1aabe616b6427e5760ee68c3a",
+        "hash": "e9e7bc0022b2877ebd20fdb39cd56ac845b2d8c4c4948786def72ba9dfc6db88"
+    },
+    {
+        "index": 20,
+        "timestamp": "2025-04-09 17:04:01",
+        "validator": "validator_1",
+        "devices": {
+            "243705863286": "Lost"
+        },
+        "region": "United Kingdom",
+        "operator": "EE",
+        "previous_hash": "e9e7bc0022b2877ebd20fdb39cd56ac845b2d8c4c4948786def72ba9dfc6db88",
+        "hash": "384c3845f7d348ebfcc338bab5d21e8c896dd911dfd6faf62d6bfa254f34e1ca"
+    },
+    {
+        "index": 21,
+        "timestamp": "2025-04-09 23:22:04",
+        "devices": {
+            "357939537539": "Lost"
+        },
+        "region": "UAE",
+        "operator": "Verizon",
+        "validator": "admin",
+        "previous_hash": "384c3845f7d348ebfcc338bab5d21e8c896dd911dfd6faf62d6bfa254f34e1ca",
+        "hash": "2863814331a4ce414c79a486e43a0879389b1fec772f1869d70aff93a85a02d2"
+    },
+    {
+        "index": 22,
+        "timestamp": "2025-04-09 23:22:22",
+        "devices": {
+            "23538507353": "Lost"
+        },
+        "region": "UAE",
+        "operator": "Verizon",
+        "validator": "admin",
+        "previous_hash": "2863814331a4ce414c79a486e43a0879389b1fec772f1869d70aff93a85a02d2",
+        "hash": "7c1f5226dddc2ee290f79a6b77314f47ecf4fcf24dd40738c4fdcf02c7bc33da"
+    },
+    {
+        "index": 23,
+        "timestamp": "2025-04-09 23:44:06",
+        "devices": {
+            "304839473947": "Lost"
+        },
+        "region": "UAE",
+        "operator": "Verizon",
+        "validator": "validator1",
+        "previous_hash": "7c1f5226dddc2ee290f79a6b77314f47ecf4fcf24dd40738c4fdcf02c7bc33da",
+        "hash": "cfb727ee38d5a2c78e2794f0bf7b8ce77bb5155273ea39e47646a8415cf9b8a6"
+    },
+    {
+        "index": 24,
+        "timestamp": "2025-04-09 23:44:29",
+        "devices": {
+            "04284028402808024": "Lost"
+        },
+        "region": "UK",
+        "operator": "EE",
+        "validator": "validator1",
+        "previous_hash": "cfb727ee38d5a2c78e2794f0bf7b8ce77bb5155273ea39e47646a8415cf9b8a6",
+        "hash": "61531e3f58a84bfe0f753647045e1a0bd5b9595980100c44a71efe7d92ec4f9f"
+    },
+    {
+        "index": 25,
+        "timestamp": "2025-04-09 23:51:54",
+        "devices": {
+            "947247294724": "Lost"
+        },
+        "region": "France",
+        "operator": "Vodafone",
+        "validator": "validator1",
+        "previous_hash": "61531e3f58a84bfe0f753647045e1a0bd5b9595980100c44a71efe7d92ec4f9f",
+        "hash": "9eceefb441b400e01faa8b08b23922971e76ec7fbf018410c22de0ef83213cc8"
+    },
+    {
+        "index": 26,
+        "timestamp": "2025-04-10 00:25:15",
+        "devices": {
+            "565656565656": "Lost"
+        },
+        "region": "Great Britain",
+        "operator": "EE",
+        "validator": "validator3",
+        "previous_hash": "9eceefb441b400e01faa8b08b23922971e76ec7fbf018410c22de0ef83213cc8",
+        "hash": "40c361c0e301f5033879a3d4ce534030c31e3e6b969c76ed2546200adc4767c3"
+    },
+    {
+        "index": 27,
+        "timestamp": "2025-04-10 01:10:55",
+        "devices": {
+            "8384738438": "Lost"
+        },
+        "region": "UAE",
+        "operator": "EE",
+        "validator": "validator1",
+        "previous_hash": "40c361c0e301f5033879a3d4ce534030c31e3e6b969c76ed2546200adc4767c3",
+        "hash": "1d58cfe3ce857e6f2ffb17ccbf32917b4c22dbd49ebfd8a3a2fb90cad96f8aa2"
+    },
+    {
+        "index": 28,
+        "timestamp": "2025-04-10 18:44:37",
+        "devices": {
+            "3487348638": "Blocked"
+        },
+        "region": "UAE",
+        "operator": "Verizon",
+        "validator": "validator1",
+        "previous_hash": "1d58cfe3ce857e6f2ffb17ccbf32917b4c22dbd49ebfd8a3a2fb90cad96f8aa2",
+        "hash": "57790ce871b2a5117d2d0d0afa6c039d722b53c4cd029662fffe9e73a02bf5e0"
+    },
+    {
+        "index": 29,
+        "timestamp": "2025-04-12 18:39:20",
+        "devices": {
+            "384634836438": "Stolen"
+        },
+        "region": "United Kingdom",
+        "operator": "EE",
+        "validator": "validator1",
+        "previous_hash": "57790ce871b2a5117d2d0d0afa6c039d722b53c4cd029662fffe9e73a02bf5e0",
+        "hash": "8732412dff6a21e239e6edd970f71ac586cae247d6a442f56316efb9d1cb66ea"
+    }
+]

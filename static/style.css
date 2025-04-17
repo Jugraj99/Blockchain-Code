@@ -1,0 +1,119 @@
+body {
+    font-family: "Gidole", sans-serif;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 85px; /* Add this line to move the content down */
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+.gidole-regular {
+    font-family: "Gidole", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.welcome {
+    border: 1px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-weight: bold;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+input.dark-mode, select.dark-mode {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    
+    /* Positioning the button at the top right */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensures the button stays above other elements */
+}
+
+/* Hover effect for Dark Mode Toggle */
+#darkModeToggle:hover {
+    background-color: #0056b3;
+}
+
+body, input, select, button {
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+#searchResult {
+    transition: all 1s ease;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#searchResult.show {
+    opacity: 1;
+    max-height: 100px; /* Adjust depending on how much content appears */
+}
+
+#addMessage {
+    opacity: 0;
+    transition: opacity 0.5s ease, height 0.5s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+#addMessage.show {
+    opacity: 1;
+    height: 1.5em; /* or auto, depending on your design */
+}
+
+

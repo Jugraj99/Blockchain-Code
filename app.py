@@ -9,7 +9,8 @@ app.secret_key = os.urandom(24)
 validators = {
     "validator1": "password123",
     "validator2": "admin456",
-    "validator3": "password003"
+    "validator3": "password003",
+    "portfolio": "portfolio00"
 }
 
 @app.route('/')
